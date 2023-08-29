@@ -1,0 +1,22 @@
+//Scope Resolutions
+#include<bits/stdc++.h>
+using namespace std;
+class Human{
+public:
+    string name;
+    void dispaly(){
+        cout<<Human::name<<endl;
+    }
+};
+int main()
+{
+    Human ajay,pig;
+    ajay.name="hey";
+    ajay.dispaly();
+    pig.name="Nav";
+    pig.dispaly();
+    //
+    Human *aunty=new Human();
+    aunty->name="Sameer";
+    aunty->dispaly();
+}
